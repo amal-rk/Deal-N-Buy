@@ -14,6 +14,10 @@ class UserController extends Controller
         return view('english.user.register');
     }
 
+    public function CarDealEn () {
+        return view('english.user.car-deals');
+    }
+
     public function RegisterUserEn (Request $request) {
 
 

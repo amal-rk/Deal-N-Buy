@@ -26,6 +26,7 @@ Route::get('/en/', function () { return view('english.homepage'); });
 Route::get('/en/user-registration', [UserController::class, 'RegisterFormEn']);
 Route::post('/en/register-user', [UserController::class, 'RegisterUserEn']);
 Route::get('/en/user-login', [UserController::class, 'LoginFormEn']);
+Route::get('/en/car-deals', [UserController::class, 'CarDealEn']);
 
 //English Professional Routes
 Route::get('/en/professional-registration', [ProfessionalController::class, 'RegisterFormEn']);
