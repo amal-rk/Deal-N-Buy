@@ -86,7 +86,7 @@
 				</div>
 				<div class="container col-9">
 					<div class="d-flex flex-row">
-						<a href="#">
+						<a href="{{ url('/en/car-deals') }}">
 							<div class="p-5 m-2 item">
 								<img src="{{ asset('icons/car.svg') }}" alt="Image of a Car">
 								<p>Cars</p>

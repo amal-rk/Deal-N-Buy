@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
 <head>
-<title>Free Movies Store Website Template | Home :: w3layouts</title>
+<title>Buy Cars at Deal N Buy</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="{{ url('car-deal-assets/css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
@@ -19,7 +19,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     $(window).load(function() {
         $('#slider').nivoSlider();
     });
-    </script>
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 	body, .header, .content .headertop_desc{
@@ -31,6 +35,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	}
 	.rupees{
 		color: blueviolet !important;
+	}
+	.grid_1_of_5, .images_1_of_5{
+		padding:11px;
+		width: 280px;
+	}
+	.checked {
+  		color: orange;
 	}
 </style>
 <body>
@@ -67,7 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="header_top_right">
 					<div class="cart">
-						<p>
+						<p style="margin-bottom:0;">
 							<span>Language</span>
 							<div id="dd" class="wrapper-dropdown-2"> <!-- (empty) -->
 								<ul class="dropdown">
@@ -88,7 +99,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</form>
 					</div>
 						<div class="clear">
-						</div>
+					</div>
 				</div>
 				<script type="text/javascript">
 					function DropDown(el) {
@@ -132,68 +143,257 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="section group">
 					<div class="grid_1_of_5 images_1_of_5">
-							<a href="preview.html"><img src="{{ url('car-deal-assets/images/car1.jpg') }}" alt="" /></a>
-							<h2><a href="preview.html">End Game</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel1" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car1.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car2.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car3.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel1" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car1.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">End Game</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">620.87 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-								</div>
-							<div class="clear"></div>
+							</div> --}}
+							<div class="address">London</div>
+							<div class="date">16-05-1999</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>					 
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car2.jpg') }}" alt="" /></a>
-						<h2><a href="preview.html">Sorority Wars</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car4.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car5.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car6.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel2" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car2.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Sorority Wars</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">620.87 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-								</div>
+							</div> --}}
 							<div class="clear"></div>
+						</div>
+						<div class="address">London</div>
+						<div class="date">16-05-2019</div>
+						<div class="">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
 						</div>
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car3.jpg') }}" alt="" /></a>
-						<h2><a href="preview.html">Twilight New Moon</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car7.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car8.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car9.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel3" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car3.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Twilight New Moon</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">899.75 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-							</div>
+							</div> --}}
 							<div class="clear"></div>
 						</div>
+						<div class="address">London</div>
+						<div class="date">16-05-2019</div>
+						<div class="">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car4.jpg') }}" alt="" /></a>
-						<h2><a href="preview.html">Avatar</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel4" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car10.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car1.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car2.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel4" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car4.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Avatar</a></h4>
 						<div class="price-details">
-						<div class="price-number">
-							<p><span class="rupees">599.00 &euro;</span></p>
-						</div>
-						<div class="add-cart">								
-							<h4><a href="preview.html">Add to Cart</a></h4>
-						</div>
-						<div class="clear"></div>
+							<div class="price-number">
+								<p><span class="rupees">599.00 &euro;</span></p>
+							</div>
+							{{-- <div class="add-cart">								
+								<h4><a href="preview.html">Add to Cart</a></h4>
+							</div> --}}
+							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car5.jpg') }}" alt="" /></a>
-							<h2><a href="preview.html">Black Swan</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel5" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car3.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car4.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car5.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel5" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel5" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car5.jpg') }}" alt="" /></a> --}}
+							<h4><a href="preview.html">Black Swan</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">679.87 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-							</div>
+							</div> --}}
 							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>				     
 					</div>
 				</div>
@@ -206,70 +406,258 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 				<div class="section group">
 					<div class="grid_1_of_5 images_1_of_5">
-							<a href="preview.html">
-								<img src="{{ url('car-deal-assets/images/car6.jpg') }}" alt="" />
-							</a>
-							<h2><a href="preview.html">Beauty and the beast</a></h2>
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">620.87 &euro;</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="preview.html">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="grid_1_of_5 images_1_of_5">
-							<a href="preview.html"><img src="{{ url('car-deal-assets/images/car7.jpg') }}" alt="" /></a>
-							<h2><a href="preview.html">Eclipse</a></h2>
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">620.87 &euro;</span></p>
-							</div>
-							<div class="add-cart">								
-								<h4><a href="preview.html">Add to Cart</a></h4>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel6" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car6.jpg') }}" alt="Los Angeles" style="width:100%;">
 								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car7.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car8.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel6" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car6.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Beauty and the beast</a></h4>
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">620.87 &euro;</span></p>
+							</div>
+							{{-- <div class="add-cart">								
+								<h4><a href="preview.html">Add to Cart</a></h4>
+							</div> --}}
 							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car8.jpg') }}" alt="" /></a>
-							<h2><a href="preview.html">Coraline</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel7" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car9.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car10.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car1.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel7" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car7.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Eclipse</a></h4>
+						<div class="price-details">
+							<div class="price-number">
+								<p><span class="rupees">620.87 &euro;</span></p>
+							</div>
+							{{-- <div class="add-cart">								
+								<h4><a href="preview.html">Add to Cart</a></h4>
+							</div> --}}
+							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+						</div>
+					</div>
+					<div class="grid_1_of_5 images_1_of_5">
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel8" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car2.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car3.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car4.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel8" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel8" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car8.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Coraline</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">899.75 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-								</div>
+							</div> --}}
 							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car9.jpg') }}" alt="" /></a>
-						<h2><a href="preview.html">Unstoppable</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel9" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car5.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car6.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car7.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel9" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel9" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car9.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Unstoppable</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">599.00 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-								</div>
+							</div> --}}
 							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>
 					</div>
 					<div class="grid_1_of_5 images_1_of_5">
-						<a href="preview.html"><img src="{{ url('car-deal-assets/images/car10.jpg') }}" alt="" /></a>
-							<h2><a href="preview.html">Priest 3D</a></h2>
+						<div class="container" style="width:240px;"> 
+							<div id="myCarousel10" class="carousel slide" data-ride="carousel">
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+								<img src="{{ url('car-deal-assets/images/car8.jpg') }}" alt="Los Angeles" style="width:100%;">
+								</div>
+						
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car9.jpg') }}" alt="Chicago" style="width:100%;">
+								</div>
+							
+								<div class="item">
+								<img src="{{ url('car-deal-assets/images/car10.jpg') }}" alt="New york" style="width:100%;">
+								</div>
+							</div>
+						
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel10" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel10" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							</div>
+						</div>
+						{{-- <a href="preview.html"><img src="{{ url('car-deal-assets/images/car10.jpg') }}" alt="" /></a> --}}
+						<h4><a href="preview.html">Priest 3D</a></h4>
 						<div class="price-details">
 							<div class="price-number">
 								<p><span class="rupees">679.87 &euro;</span></p>
 							</div>
-							<div class="add-cart">								
+							{{-- <div class="add-cart">								
 								<h4><a href="preview.html">Add to Cart</a></h4>
-							</div>
+							</div> --}}
 							<div class="clear"></div>
+							<div class="address">London</div>
+							<div class="date">16-05-2019</div>
+							<div class="">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
 						</div>				     
 					</div>
 				</div>

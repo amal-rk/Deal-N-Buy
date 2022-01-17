@@ -22,6 +22,16 @@ use App\Http\Controllers\AdvertiserController;
 Route::redirect('/','/en');
 Route::get('/en/', function () { return view('english.homepage'); });
 
+// Vehicle Forms
+Route::get('/en/cars/register', function() { return view('english.product.cars.car-form'); });
+Route::get('/en/bikes/register', function() { return view('english.product.bikes.bike-form'); });
+Route::get('/en/boats/register', function() { return view('english.product.boats.boat-form'); });
+Route::get('/en/trucks/register', function() { return view('english.product.trucks.truck-form'); });
+
+//car routes
+Route::view('/en/cars/profile', 'english.product.cars.car-profile-2');
+
+
 //English User Routes
 Route::get('/en/user-registration', [UserController::class, 'RegisterFormEn']);
 Route::post('/en/register-user', [UserController::class, 'RegisterUserEn']);
@@ -37,6 +47,9 @@ Route::get('/en/professional-login', [ProfessionalController::class, 'LoginFormE
 Route::get('/en/advertiser-registration', [AdvertiserController::class, 'RegisterFormEn']);
 Route::post('/en/register-advertiser', [AdvertiserController::class, 'RegisterAdvertiserEn']);
 Route::get('/en/advertiser-login', [AdvertiserController::class, 'LoginFormEn']);
+
+//English Product Routes
+// Route::view('/en/product/create','english.product.create-form-2');
 
 
 //French Routes
